@@ -1,3 +1,5 @@
+# Mateusz Tofil
+
 function khanMacheps16()
     number = Float16(1.0)
     number = 3 * number * ((4 * number)/(3 * number) - number) - number

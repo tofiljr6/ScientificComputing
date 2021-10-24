@@ -68,15 +68,14 @@ function subpointD(x :: Array, y :: Array)
     result
 end
 
-# println("A Float64  ", subpointA(xFloat64, yFloat64))
-# println("A Float32  ", subpointA(xFloat32, yFloat32))
+println("A Float64  ", subpointA(xFloat64, yFloat64))
+println("A Float32  ", subpointA(xFloat32, yFloat32))
 
-# println("B Float64  ", subpointB(xFloat64, yFloat64))
-# println("B Float32  ", subpointB(xFloat32, yFloat32))
+println("B Float64  ", subpointB(xFloat64, yFloat64))
+println("B Float32  ", subpointB(xFloat32, yFloat32))
 
-# println("C Float64  ", subpointC(xFloat64, yFloat64))
-# println("C Float32  ", subpointC(xFloat32, yFloat32))
+println("C Float64  ", subpointC(xFloat64, yFloat64))
+println("C Float32  ", subpointC(xFloat32, yFloat32))
 
-
-println(subpointD(xFloat64, yFloat64))
-println(subpointD(xFloat32, yFloat32))
+println("D Float64 ", subpointD(xFloat64, yFloat64))
+println("D Float32 ", subpointD(xFloat32, yFloat32))

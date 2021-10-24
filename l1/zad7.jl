@@ -16,7 +16,11 @@ println(mathapproximation)
 function test()
     for i in 0:54
         tmp = d(f, 1.0, 2.0^(Float64(-i)))
-        println(1.0 + 2.0^(-i), "\t", tmp, "\t", abs(mathapproximation - tmp))
+        # printowanie do zobaczenia w terminalu
+        # println(1.0 + 2.0^(-i), "\t", tmp, "\t", abs(mathapproximation - tmp))
+
+        # printowanie do wklejenia do latex
+        println("\\(2^{-", i, "}\\)", "&", 1.0 + 2.0^(-i), "&", tmp, "&", abs(mathapproximation - tmp), "\\\\")
     end
 end
 test()
