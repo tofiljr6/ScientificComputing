@@ -1,9 +1,13 @@
+# Mateusz Tofil
+
+# dane z zadania i mapowanie wartość do Float32
 xFloat64 = [2.718281828, -3.141592654, 1.414213562, 0.5772156649, 0.3010299957]
 yFloat64 = [1486.2497, 878366.9879, -22.37492, 4773714.647, 0.000185049]
-
 xFloat32 = map((d) -> Float32(d), xFloat64)
 yFloat32 = map((d) -> Float32(d), yFloat64)
 
+# algorytm do podpunktu a
+# dwa paramety, dwie tablice 
 function subpointA(x :: Array, y :: Array)
     s = 0.0
     for i in 1:length(x)
@@ -12,6 +16,8 @@ function subpointA(x :: Array, y :: Array)
     s
 end
 
+# algorytm do podpunktu b
+# dwa paramety, dwie tablice 
 function subpointB(x :: Array, y :: Array)
     s = 0.0
     for i in reverse(1:length(x))

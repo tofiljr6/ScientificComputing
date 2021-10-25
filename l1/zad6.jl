@@ -1,3 +1,5 @@
+# Mateusz Tofil
+
 function f(x :: Float64)
     return sqrt(x^2+1) -1
 end

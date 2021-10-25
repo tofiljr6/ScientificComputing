@@ -1,5 +1,7 @@
 # Mateusz Tofil
 
+# Funkcja w eksperymentalcny sposób wyznacza odległość między liczbami na przedziale [numberA, numberB].
+# Jeżeli odległośći na przedziael będą takie same, funkcja zwróci True, w przeciwnym przypadku False
 function stepbystep(numberA :: Float64, numberB :: Float64)
     cur = nextflaot(first)
     while cur < numberB
@@ -11,14 +13,17 @@ function stepbystep(numberA :: Float64, numberB :: Float64)
     true
 end
 
+# Funkcja wyznacza odległośći między liczbami zmiennopozycyjnymi korzystając ze znajomości IEEE 754
+# Funkcja przyjmuje dwa paramenty, początek i koniec przedziału, opisane kolejno [numberA, numberB]
+# Dodatkowo funkcja zwraca odległość między liczbami na podanym na wejściu przedziale
 function numberDistribution(numberA :: Float64, numberB :: Float64)
     numberB = prevfloat(numberB)
 
     expA = SubString(bitstring(numberA), 2:12)
     expB = SubString(bitstring(numberB), 2:12)
 
-    println(expA)
-    println(expB)
+    # println(expA)
+    # println(expB)
 
     # exponenty muszą być sobie równe, w przecwinym przypadku rozmieszczenie nie będzie równe
     if (expA != expB)

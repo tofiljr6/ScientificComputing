@@ -1,3 +1,5 @@
+# Mateusz Tofil
+
 function d(fun, x0, h)
     return (fun(x0+h)-fun(x0))/h
 end
